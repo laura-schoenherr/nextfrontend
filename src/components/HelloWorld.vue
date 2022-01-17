@@ -2,10 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Clicked the link above marked "Secured" to see the content blocked by authorization.
+     Welcome to the FridgiGo App! We are happy to see you!
     </p>
-    <p>Use the login button below to force a login before attempting to see the secured content</p>
-    <div v-if="!isAuthenticated"><button @click="login">Login</button></div>
+    <p>Please log in or sign up to use our app</p>
+    <div v-if="!isAuthenticated"><button @click="login">Login or Sign up</button></div>
     <div v-else><button @click="logout">Logout</button></div>
   </div>
 </template>

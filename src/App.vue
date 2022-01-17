@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="FridgiGo logo" src="./assets/FridgiGoLogo.png">
+    <img alt="FridgiGo logo" src="./assets/FridgiGoLogo250.png">
     <HelloWorld msg="Welcome to the FridgiGo App"/>
   </div>
 </template>
