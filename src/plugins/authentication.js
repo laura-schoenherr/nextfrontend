@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Keycloak from 'keycloak-js'
 
 const options = {
-    url: 'http://localhost:8001/auth/',
-    realm: 'local-dev',
-    clientId: 'vue-demo'
+    url: 'http://localhost:8080/auth',
+    realm: 'FridigGo',
+    clientId: 'fridgigoclient'
 }
 
 const _keycloak = Keycloak(options)
