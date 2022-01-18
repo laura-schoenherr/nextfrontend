@@ -50,4 +50,10 @@ li {
 a {
   color: #42b983;
 }
+p{
+  background-color:#b2edef
+}
+template{
+  background-color:#b2edef
+}
 </style>

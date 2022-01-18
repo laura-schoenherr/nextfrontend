@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Secured App"/>
+    <img alt="FridgiGo logo" src="../assets/FridgiGoLogo250.png">
+    <HelloWorld msg="Welcome to the secured FridgiGo App"/>
   </div>
 </template>
 
