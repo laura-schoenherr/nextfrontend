@@ -43,8 +43,8 @@ router.beforeEach((to, from, next) => {
         const basePath = window.location.toString()
         if (!Vue.$keycloak.authenticated) {
             // The page is protected and the user is not authenticated. Force a login.
-            Vue.$keycloak.login({ redirectUri: basePath.slice(0, -1) + to.path })
-        } else if (Vue.$keycloak.hasResourceRole('vue-demo-user')) {
+            Vue.$keycloak.login({redirectUri: basePath.slice(0, -1) + to.path})
+        } else if (Vue.$keycloak.hasResourceRole('default-roles-fridiggo')) {
             // The user was authenticated, and has the app role (is authorized). Update the token.
             Vue.$keycloak.updateToken(70)
                 .then(() => {
@@ -54,13 +54,9 @@ router.beforeEach((to, from, next) => {
                     console.error(err)
                 })
         } else {
-            // The user was authenticated, but did not have the correct role (is not authorized)
-            // Redirect the user to an error page
-            next({ name: 'Unauthorized' })
+            // This page did not require authentication
+            next()
         }
-    } else {
-        // This page did not require authentication
-        next()
     }
 })
 
