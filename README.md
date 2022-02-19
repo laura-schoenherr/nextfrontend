@@ -1,5 +1,7 @@
 # Project setup 
 
+Vue 2 with Keycloak
+
 ### installing keycloak
 
 Download Keycloak
