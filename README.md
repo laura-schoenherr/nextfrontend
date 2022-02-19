@@ -1,6 +1,6 @@
-# nextfrontend
+# Project setup 
 
-##  before Project setup 
+Vue 2 with Keycloak
 
 ### installing keycloak
 
@@ -36,10 +36,36 @@ To do this open <http://localhost:8080/auth>, then fill in the form with your pr
 Go to the Keycloak Admin Console and login with the username and password you created earlier.
 
 ### Create a realm
+* Hover your mouse over the dropdown in the top-left corner where it says ```Master``` 
+then click on ```Add Realm```
+* Fill in the form with the following values: 
+  * Name: ```myrealm``` (choose your preferred realm name)
+* Click ```Create```
+
+### Create a user 
+
+There is no user in the realm you just created, so you need to create one: 
+1. Click ```Users``` in the left-hand menu
+  * Click ```Add user``` in the top-right corner of the table
+2. Fill in the form with the following values
+    * Username: ````yourPreferredName````
+    * First Name: your first name
+    * Last Name: your last name
+3. Click ```Save```
+
+The user needs an initial password to log into the application. To create one do this: 
+
+1. Click ```Credentials``` on the top of the page
+2. Fill in the ```Set Password``` form with a password of your choice
+3. Click ```ON``` next to ```Temporary``` to prevent having to update 
+the password on the first login. The button must then turn grey and show ```OFF```.
+
+### Secure the app
 
 
 
-## Project setup
+
+## Project setup yarn
 ```
 yarn install
 ```
